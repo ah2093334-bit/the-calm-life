@@ -1,41 +1,10 @@
-:root {
-  --bg: #EAF0EA;
-  --bg-card: #FBFCF9;
-  --ink: #1B2E22;
-  --ink-soft: #4C6156;
-  --accent: #E8935C;
-  --accent-deep: #C96F3A;
-  --sage: #8FAE96;
-  --line: #D2DED2;
-  --mono: 'IBM Plex Mono', monospace;
-  --display: 'Fraunces', serif;
-  --body: 'Inter', sans-serif;
-}
-
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--ink);
-  font-family: var(--body);
-  line-height: 1.7;
-}
-
-a { color: inherit; }
-
-.wrap {
+/* Header */
+header {
+  padding: 26px 0;
   max-width: 860px;
   margin: 0 auto;
-  padding: 0 24px;
-}
-
-/* Header */
-header.site {
-  padding: 26px 0;
-}
-
-.brand-row {
+  padding-left: 24px;
+  padding-right: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,31 +12,27 @@ header.site {
   flex-wrap: wrap;
 }
 
-.brand {
-  font-family: var(--display);
-  font-weight: 600;
-  font-size: 1.5rem;
-  text-decoration: none;
+.logo {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
-.brand .dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--accent);
-  display: inline-block;
-  animation: breathe 4s ease-in-out infinite;
+.logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
 }
 
-@keyframes breathe {
-  0%, 100% { transform: scale(1); opacity: 0.85; }
-  50% { transform: scale(1.6); opacity: 1; }
+nav {
+  display: flex;
+  align-items: center;
 }
 
-nav.site a {
+nav a {
   font-family: var(--mono);
   font-size: 0.82rem;
   text-decoration: none;
@@ -75,152 +40,6 @@ nav.site a {
   margin-left: 22px;
 }
 
-nav.site a:hover { color: var(--accent-deep); }
-
-/* Hero */
-.hero {
-  padding: 56px 0 44px;
-  position: relative;
-}
-
-.hero .eyebrow {
-  font-family: var(--mono);
-  font-size: 0.78rem;
+nav a:hover {
   color: var(--accent-deep);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.hero h1 {
-  font-family: var(--display);
-  font-weight: 600;
-  font-size: clamp(2.1rem, 5vw, 3.2rem);
-  line-height: 1.15;
-  margin: 16px 0 18px;
-  max-width: 16ch;
-}
-
-.hero p {
-  max-width: 50ch;
-  color: var(--ink-soft);
-  font-size: 1.08rem;
-}
-
-.hero-shape {
-  position: absolute;
-  top: 20px;
-  right: -40px;
-  width: 220px;
-  height: 220px;
-  background: radial-gradient(circle at 30% 30%, var(--sage) 0%, transparent 70%);
-  opacity: 0.5;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-/* Post list */
-.posts { padding: 30px 0 80px; }
-
-.posts h2 {
-  font-family: var(--mono);
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--ink-soft);
-  margin-bottom: 22px;
-}
-
-.post-card {
-  display: block;
-  text-decoration: none;
-  background: var(--bg-card);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 26px 28px;
-  margin-bottom: 16px;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
-}
-
-.post-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--sage);
-  box-shadow: 0 10px 26px rgba(27,46,34,0.08);
-}
-
-.post-card .date {
-  font-family: var(--mono);
-  font-size: 0.74rem;
-  color: var(--accent-deep);
-}
-
-.post-card h3 {
-  font-family: var(--display);
-  font-weight: 600;
-  font-size: 1.35rem;
-  margin: 8px 0 8px;
-}
-
-.post-card p {
-  color: var(--ink-soft);
-  margin: 0;
-  font-size: 0.98rem;
-}
-
-/* Footer */
-footer.site {
-  border-top: 1px solid var(--line);
-  padding: 26px 0;
-  font-family: var(--mono);
-  font-size: 0.76rem;
-  color: var(--ink-soft);
-}
-
-/* Article page */
-.article-header {
-  padding: 52px 0 18px;
-}
-
-.article-header .date {
-  font-family: var(--mono);
-  font-size: 0.78rem;
-  color: var(--accent-deep);
-}
-
-.article-header h1 {
-  font-family: var(--display);
-  font-weight: 600;
-  font-size: clamp(1.9rem, 4.5vw, 2.7rem);
-  margin: 12px 0 8px;
-  line-height: 1.15;
-}
-
-.article-body {
-  padding: 30px 0 80px;
-  font-size: 1.08rem;
-}
-
-.article-body h2 {
-  font-family: var(--display);
-  font-weight: 600;
-  margin-top: 38px;
-  font-size: 1.4rem;
-}
-
-.article-body p { margin: 18px 0; color: var(--ink); }
-
-.back-link {
-  font-family: var(--mono);
-  font-size: 0.84rem;
-  text-decoration: none;
-  color: var(--ink-soft);
-  display: inline-block;
-  margin-top: 24px;
-}
-
-.back-link:hover { color: var(--accent-deep); }
-
-@media (max-width: 560px) {
-  nav.site a { margin-left: 12px; }
-  .hero { padding: 44px 0 30px; }
-  .hero-shape { display: none; }
 }
