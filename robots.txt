@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ah2093334-bit.github.io/the-calm-life/sitemap.xml
