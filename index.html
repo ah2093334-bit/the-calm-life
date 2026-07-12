@@ -8,6 +8,7 @@
 <meta property="og:description" content="Practical wellness tips, morning routines, and everyday habits for a calmer life.">
 <meta name="google-site-verification" content="mEezSv5oefnisWMchZvFSkKp8ahn7cLnGKrXEfe7Ukk" />
 <title>The Calm Life — Simple Wellness for Everyday People</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -54,10 +55,10 @@
     <h2>Latest Articles</h2>
 
     <div class="category-nav">
-      <a href="index.html">All</a>
-      <a href="index.html#mind">Mind</a>
-      <a href="index.html#body">Body</a>
-      <a href="index.html#sleep">Sleep</a>
+      <a href="#" class="filter-btn active" data-filter="all">All</a>
+      <a href="#" class="filter-btn" data-filter="cat-mind">Mind</a>
+      <a href="#" class="filter-btn" data-filter="cat-body">Body</a>
+      <a href="#" class="filter-btn" data-filter="cat-sleep">Sleep</a>
     </div>
 
     <a href="article.html" class="post-card cat-mind">
@@ -170,6 +171,26 @@
       </div>
     </a>
 
+    <a href="hair-health.html" class="post-card cat-body">
+      <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Hair health">
+      <div class="post-card-body">
+        <div class="date">July 12, 2026</div>
+        <span class="category-tag body">Body</span>
+        <h3>Why Your Hair Gets Weak — And How to Support It</h3>
+        <p>What causes weak or thinning hair, and daily habits that actually help.</p>
+      </div>
+    </a>
+
+    <a href="teeth-nails-health.html" class="post-card cat-body">
+      <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Teeth and nails health">
+      <div class="post-card-body">
+        <div class="date">July 12, 2026</div>
+        <span class="category-tag body">Body</span>
+        <h3>Caring for Your Teeth and Nails: A Simple Guide</h3>
+        <p>What protects your enamel, what your nails can tell you, and simple daily habits.</p>
+      </div>
+    </a>
+
   </div>
 </section>
 
@@ -181,5 +202,22 @@
   </div>
 </footer>
 
+<script>
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.post-card').forEach(card => {
+        if (filter === 'all' || card.classList.contains(filter)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
