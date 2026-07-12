@@ -4,7 +4,7 @@
   --ink: #1B2E22;
   --ink-soft: #4C6156;
   --accent: #E8935C;
-  --accent-deep: #C96F3A;
+  --accent-deep: #A85A2E;
   --sage: #8FAE96;
   --sage-deep: #5E7C66;
   --line: #D2DED2;
@@ -196,12 +196,17 @@ nav.site a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   text-decoration: none;
   background: var(--bg-card);
   border: 1px solid var(--line);
+  border-left: 6px solid var(--sage);
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 32px;
   box-shadow: 0 2px 10px rgba(27,46,34,0.05);
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
+
+.post-card.cat-mind { border-left-color: #5B72C4; }
+.post-card.cat-body { border-left-color: #C4615B; }
+.post-card.cat-sleep { border-left-color: #7A5BC4; }
 
 .post-card:hover {
   transform: translateY(-4px);
