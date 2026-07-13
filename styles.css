@@ -1,13 +1,13 @@
 :root {
-  --bg: #EAF0EA;
-  --bg-card: #FBFCF9;
-  --ink: #1B2E22;
-  --ink-soft: #4C6156;
+  --bg: #EAF1F8;
+  --bg-card: #FFFFFF;
+  --ink: #16233D;
+  --ink-soft: #48597A;
   --accent: #E8935C;
   --accent-deep: #A85A2E;
-  --sage: #8FAE96;
-  --sage-deep: #5E7C66;
-  --line: #D2DED2;
+  --sage: #5B85C4;
+  --sage-deep: #2F4C7A;
+  --line: #D3E0EE;
   --mono: 'IBM Plex Mono', monospace;
   --display: 'Fraunces', serif;
   --body: 'Inter', sans-serif;
@@ -17,7 +17,7 @@
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, #EAF0EA 0%, #F3F0E4 50%, #EDEFF5 100%);
+  background: linear-gradient(180deg, #EAF1F8 0%, #EEF3FA 50%, #E8EEF7 100%);
   background-attachment: fixed;
   color: var(--ink);
   font-family: var(--body);
@@ -167,17 +167,18 @@ nav.site a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .category-tag {
   display: inline-block;
   font-family: var(--mono);
-  font-size: 0.68rem;
+  font-size: 0.85rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  padding: 3px 10px;
+  padding: 6px 16px;
   border-radius: 999px;
   margin-right: 8px;
 }
 
-.category-tag.mind { background: #DCE3F5; color: #3A4E8C; }
-.category-tag.body { background: #F5DCDC; color: #8C3A3A; }
-.category-tag.sleep { background: #E0DCF5; color: #5A3A8C; }
+.category-tag.mind { background: #2F4C9E; color: #FFFFFF; }
+.category-tag.body { background: #C4453B; color: #FFFFFF; }
+.category-tag.sleep { background: #6B3EA8; color: #FFFFFF; }
 
 .category-nav {
   display: flex;
@@ -218,9 +219,9 @@ nav.site a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
-.post-card.cat-mind { border-left-color: #5B72C4; }
-.post-card.cat-body { border-left-color: #C4615B; }
-.post-card.cat-sleep { border-left-color: #7A5BC4; }
+.post-card.cat-mind { border-left-color: #2F4C9E; }
+.post-card.cat-body { border-left-color: #C4453B; }
+.post-card.cat-sleep { border-left-color: #6B3EA8; }
 
 .post-card:hover {
   transform: translateY(-4px);
