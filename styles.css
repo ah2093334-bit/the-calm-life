@@ -1,13 +1,13 @@
 :root {
-  --bg: #EAF1F8;
+  --bg: #F5F7FA;
   --bg-card: #FFFFFF;
-  --ink: #16233D;
-  --ink-soft: #48597A;
-  --accent: #E8935C;
-  --accent-deep: #A85A2E;
-  --sage: #5B85C4;
-  --sage-deep: #2F4C7A;
-  --line: #D3E0EE;
+  --ink: #0F4C81;
+  --ink-soft: #4A6178;
+  --accent: #4EA8DE;
+  --accent-deep: #2E7CB8;
+  --sage: #2ECC71;
+  --sage-deep: #1E9E58;
+  --line: #E1E8F0;
   --mono: 'IBM Plex Mono', monospace;
   --display: 'Fraunces', serif;
   --body: 'Inter', sans-serif;
@@ -17,7 +17,7 @@
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, #EAF1F8 0%, #EEF3FA 50%, #E8EEF7 100%);
+  background: linear-gradient(180deg, #F5F7FA 0%, #EEF3F9 50%, #E9F0F8 100%);
   background-attachment: fixed;
   color: var(--ink);
   font-family: var(--body);
@@ -35,7 +35,7 @@ a { color: inherit; }
 /* Header */
 header.site {
   padding: 20px 0;
-  background: linear-gradient(120deg, #16233D 0%, #1E3358 100%);
+  background: linear-gradient(120deg, #0F4C81 0%, #2E7CB8 100%);
   box-shadow: 0 4px 16px rgba(22,35,61,0.25);
 }
 
@@ -105,8 +105,8 @@ nav.site a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 .welcome-banner {
   display: inline-block;
-  background: #16233D;
-  color: #F6D686;
+  background: #0F4C81;
+  color: #FFD966;
   font-family: var(--display);
   font-weight: 600;
   font-style: italic;
@@ -296,6 +296,18 @@ footer.site {
   font-family: var(--mono);
   font-size: 0.76rem;
   color: var(--ink-soft);
+  text-align: center;
+  line-height: 1.9;
+}
+
+footer.site a {
+  text-decoration: none;
+  color: var(--ink-soft);
+}
+
+footer.site a:hover {
+  color: var(--accent-deep);
+  text-decoration: underline;
 }
 
 /* Article / static page */
