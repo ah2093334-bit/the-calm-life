@@ -49,15 +49,23 @@ header.site {
 
 .brand {
   font-family: var(--display);
-  font-weight: 600;
+  font-weight: 700;
   font-style: italic;
   font-size: 1.65rem;
   letter-spacing: 0.01em;
   text-decoration: none;
-  color: #FBFCF9;
   display: flex;
   align-items: center;
   gap: 10px;
+  animation: brandGlow 4s linear infinite;
+}
+
+@keyframes brandGlow {
+  0%   { color: #FFD966; text-shadow: 0 0 12px rgba(255,217,102,0.5); }
+  25%  { color: #4EA8DE; text-shadow: 0 0 12px rgba(78,168,222,0.5); }
+  50%  { color: #2ECC71; text-shadow: 0 0 12px rgba(46,204,113,0.5); }
+  75%  { color: #FF9E6D; text-shadow: 0 0 12px rgba(255,158,109,0.5); }
+  100% { color: #FFD966; text-shadow: 0 0 12px rgba(255,217,102,0.5); }
 }
 
 .brand img.logo {
@@ -93,6 +101,53 @@ nav.site a {
 
 nav.site a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
+.dots-menu {
+  position: relative;
+  margin-left: 18px;
+}
+
+.dots-btn {
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.dots-btn:hover { background: rgba(255,255,255,0.3); }
+
+.dots-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(15,76,129,0.2);
+  overflow: hidden;
+  min-width: 160px;
+  z-index: 50;
+}
+
+.dots-dropdown.open { display: block; }
+
+.dots-dropdown a {
+  display: block;
+  padding: 12px 18px;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.dots-dropdown a:hover { background: var(--bg); color: var(--accent-deep); }
+
 /* Hero */
 .hero {
   padding: 60px 0 0;
@@ -106,7 +161,6 @@ nav.site a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .welcome-banner {
   display: inline-block;
   background: #0F4C81;
-  color: #FFD966;
   font-family: var(--display);
   font-weight: 600;
   font-style: italic;
@@ -115,6 +169,15 @@ nav.site a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   border-radius: 10px;
   margin-bottom: 16px;
   letter-spacing: 0.01em;
+  animation: colorCycle 4s linear infinite;
+}
+
+@keyframes colorCycle {
+  0%   { color: #FFD966; }
+  25%  { color: #4EA8DE; }
+  50%  { color: #2ECC71; }
+  75%  { color: #FF9E6D; }
+  100% { color: #FFD966; }
 }
 
 .hero-text .eyebrow {
@@ -290,6 +353,41 @@ nav.site a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 }
 
 /* Footer */
+.founder-section {
+  border-top: 1px solid var(--line);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.founder-section img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  margin-bottom: 14px;
+}
+
+.founder-section .role {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+
+.founder-section h3 {
+  font-family: var(--display);
+  font-size: 1.3rem;
+  margin: 6px 0 8px;
+}
+
+.founder-section p {
+  color: var(--ink-soft);
+  max-width: 44ch;
+  margin: 0 auto;
+  font-size: 0.95rem;
+}
 footer.site {
   border-top: 1px solid var(--line);
   padding: 26px 0;
