@@ -17,7 +17,7 @@
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, #F5F7FA 0%, #EEF3F9 50%, #E9F0F8 100%);
+  background: linear-gradient(180deg, #D8E4F2 0%, #C7D9EE 50%, #B8CEE8 100%);
   background-attachment: fixed;
   color: var(--ink);
   font-family: var(--body);
@@ -100,6 +100,23 @@ nav.site a {
 }
 
 nav.site a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+.translate-widget {
+  display: inline-block;
+  margin-left: 14px;
+}
+
+.translate-widget .goog-te-gadget-simple {
+  background: rgba(255,255,255,0.15) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 6px 10px !important;
+  font-family: var(--mono) !important;
+}
+
+.translate-widget .goog-te-gadget-simple span {
+  color: #fff !important;
+}
 
 .dots-menu {
   position: relative;

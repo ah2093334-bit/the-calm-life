@@ -37,6 +37,7 @@
       <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <div id="google_translate_element" class="translate-widget"></div>
     <div class="dots-menu">
       <button class="dots-btn" onclick="document.getElementById('dotsDropdown').classList.toggle('open')">&#8942;</button>
       <div class="dots-dropdown" id="dotsDropdown">
@@ -421,7 +422,7 @@
 <footer class="site">
   <div class="wrap">
     © 2026 Daily Vitality. Simple wellness, one habit at a time.<br>
-    <a href="contact.html">Contact</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="disclaimer.html">Medical Disclaimer</a>
+    <a href="contact.html">Contact</a> · <a href="feedback.html">Feedback</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="disclaimer.html">Medical Disclaimer</a>
   </div>
 </footer>
 
@@ -445,7 +446,7 @@
 <script>
   (function() {
     const container = document.getElementById('fallingParticles');
-    const colors = ['#4EA8DE', '#2ECC71', '#FFD966', '#FF9E6D'];
+    const colors = ['#16233D', '#FFFFFF', '#FFD966', '#2ECC71'];
     for (let i = 0; i < 30; i++) {
       const p = document.createElement('div');
       p.className = 'particle';
@@ -460,5 +461,11 @@
     }
   })();
 </script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
