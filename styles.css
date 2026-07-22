@@ -148,7 +148,128 @@ nav.site a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 .dots-dropdown a:hover { background: var(--bg); color: var(--accent-deep); }
 
-/* Hero */
+.falling-particles {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  top: -20px;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to { transform: translateY(110vh); opacity: 0; }
+}
+/* Table of contents */
+.toc-box {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 22px;
+  margin: 24px 0;
+}
+
+.toc-title {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-deep);
+  margin-bottom: 10px;
+}
+
+.toc-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.toc-box li {
+  margin-bottom: 6px;
+}
+
+.toc-box a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.toc-box a:hover {
+  color: var(--accent-deep);
+  text-decoration: underline;
+}
+
+/* Related articles */
+.related-articles {
+  margin: 44px 0 20px;
+  border-top: 1px solid var(--line);
+  padding-top: 30px;
+}
+
+.related-articles h2 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+.related-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.related-card {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 18px;
+  text-decoration: none;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 1rem;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.related-card:hover {
+  border-color: var(--accent);
+  transform: translateX(4px);
+}
+
+/* Fruit carousel */
+.fruit-carousel {
+  overflow: hidden;
+  margin: 20px 0;
+  border-radius: 14px;
+}
+
+.fruit-track {
+  display: flex;
+  gap: 14px;
+  width: max-content;
+  animation: scrollLeft 18s linear infinite;
+}
+
+.fruit-track img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  flex-shrink: 0;
+}
+
+@keyframes scrollLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
 .hero {
   padding: 60px 0 0;
   position: relative;
