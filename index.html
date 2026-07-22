@@ -22,6 +22,7 @@
 </script>
 </head>
 <body>
+<div class="falling-particles" id="fallingParticles"></div>
 
 <header class="site">
   <div class="wrap brand-row">
@@ -353,6 +354,56 @@
       </div>
     </a>
 
+    <a href="vitamins-minerals.html" class="post-card cat-body">
+      <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Vitamins and minerals">
+      <div class="post-card-body">
+        <div class="date">July 19, 2026</div>
+        <span class="category-tag body">Body</span>
+        <h3>Vitamins and Minerals: What Your Body Actually Needs</h3>
+        <p>Which ones matter most, common deficiencies, and how to get them from food.</p>
+      </div>
+    </a>
+
+    <a href="ear-health-hearing.html" class="post-card cat-body">
+      <img src="https://images.unsplash.com/photo-hIgeoQjS_iE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Ear health and hearing">
+      <div class="post-card-body">
+        <div class="date">July 19, 2026</div>
+        <span class="category-tag body">Body</span>
+        <h3>Ear Health and Hearing: A Simple Guide</h3>
+        <p>Common causes of hearing damage, and habits that protect your ears.</p>
+      </div>
+    </a>
+
+    <a href="understanding-allergies.html" class="post-card cat-body">
+      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Understanding allergies">
+      <div class="post-card-body">
+        <div class="date">July 19, 2026</div>
+        <span class="category-tag body">Body</span>
+        <h3>Understanding Allergies: Why Your Body Overreacts</h3>
+        <p>What happens during a reaction, common triggers, and how to manage them.</p>
+      </div>
+    </a>
+
+    <a href="posture-and-health.html" class="post-card cat-body">
+      <img src="https://images.unsplash.com/photo-kKEHYN6gALQ?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Posture and health">
+      <div class="post-card-body">
+        <div class="date">July 19, 2026</div>
+        <span class="category-tag body">Body</span>
+        <h3>Why Posture Matters More Than You Think</h3>
+        <p>How poor posture affects your body beyond just back pain.</p>
+      </div>
+    </a>
+
+    <a href="apples-health-guide.html" class="post-card cat-body">
+      <img src="https://images.unsplash.com/photo-I58f47LRQYM?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Apples health guide">
+      <div class="post-card-body">
+        <div class="date">July 19, 2026</div>
+        <span class="category-tag body">Body</span>
+        <h3>Apples: A Complete Health Guide</h3>
+        <p>The real, evidence-backed benefits of apples and how to get the most from them.</p>
+      </div>
+    </a>
+
   </div>
 </section>
 
@@ -390,6 +441,24 @@
       });
     });
   });
+</script>
+<script>
+  (function() {
+    const container = document.getElementById('fallingParticles');
+    const colors = ['#4EA8DE', '#2ECC71', '#FFD966', '#FF9E6D'];
+    for (let i = 0; i < 30; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const size = Math.random() * 5 + 3;
+      p.style.width = size + 'px';
+      p.style.height = size + 'px';
+      p.style.left = Math.random() * 100 + 'vw';
+      p.style.background = colors[Math.floor(Math.random() * colors.length)];
+      p.style.animationDuration = (Math.random() * 6 + 6) + 's';
+      p.style.animationDelay = (Math.random() * 8) + 's';
+      container.appendChild(p);
+    }
+  })();
 </script>
 </body>
 </html>
