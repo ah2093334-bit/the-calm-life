@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How poor posture affects your body beyond just back pain, and simple habits to improve it.">
+<title>Why Posture Matters More Than You Think — Daily Vitality</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="articles-data.js" defer></script>
+<script src="site-features.js" defer></script>
+<style>
+  .disclaimer { background: #FBF3E7; border: 1px solid #E8C99A; border-radius: 12px; padding: 16px 20px; font-size: 0.92rem; color: #6B4E23; margin: 20px 0 30px; }
+  .lead { font-family: var(--display); font-size: 1.25rem; font-style: italic; color: var(--ink-soft); border-left: 4px solid var(--accent); padding-left: 18px; margin: 18px 0 30px; }
+</style>
+</head>
+<body>
+<div class="falling-particles" id="fallingParticles"></div>
+
+<header class="site">
+  <div class="wrap brand-row">
+    <a href="index.html" class="brand"><img src="logo.png" alt="Daily Vitality logo" class="logo" onerror="this.style.display='none'">Daily Vitality</a>
+    <nav class="site">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="dots-menu">
+      <button class="dots-btn" onclick="document.getElementById('dotsDropdown').classList.toggle('open')">&#8942;</button>
+      <div class="dots-dropdown" id="dotsDropdown">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="article-header">
+  <div class="wrap">
+    <div class="date">July 19, 2026</div>
+    <span class="category-tag body">Body</span>
+    <h1>Why Posture Matters More Than You Think</h1>
+  </div>
+</div>
+
+<div class="article-body">
+  <div class="wrap">
+    <div class="disclaimer">⚠️ This article is for general education only and is not medical advice.</div>
+
+    <img src="https://images.unsplash.com/photo-kKEHYN6gALQ?w=900&q=60&fm=webp&auto=format" alt="Person with posture discomfort" style="width:100%;border-radius:14px;margin:10px 0 20px;">
+
+    <p class="lead">Posture is not just about looking confident. The position you hold your body in for hours a day directly affects your breathing, digestion, and even your energy levels.</p>
+
+    <h2>How poor posture affects more than your back</h2><p>Slouched posture compresses your lungs, reducing how efficiently you breathe. It can also mildly affect digestion over long periods. Poor posture is even linked to lower energy and mood.</p><h2>Why modern life makes posture worse</h2><p>Hours of screen use naturally pull the head forward and round the shoulders. Over time, muscles adapt to this position, making poor posture feel normal.</p><h2>Simple habits that improve posture</h2><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0;"><div style="background:#E9F3EA;border:1px solid var(--line);border-radius:14px;padding:18px 20px;"><h3 style="margin-top:0;font-family:var(--display);font-size:1.1rem;">✅ Improves posture</h3><ul style="margin:10px 0 0;padding-left:20px;"><li>Keeping screens at eye level</li>
+          <li>Strengthening core and upper back muscles</li>
+          <li>Taking movement breaks every 30-60 minutes</li>
+          <li>Sleeping with proper neck support</li></ul></div><div style="background:#F8EAEA;border:1px solid var(--line);border-radius:14px;padding:18px 20px;"><h3 style="margin-top:0;font-family:var(--display);font-size:1.1rem;">⚠️ Worsens posture</h3><ul style="margin:10px 0 0;padding-left:20px;"><li>Looking down at phones for long periods</li>
+          <li>Slouched sitting for hours</li>
+          <li>Weak core and back muscles</li>
+          <li>Ignoring early neck or shoulder tension</li></ul></div></div><h2>A realistic approach</h2><p>Perfect posture all day is not realistic. The goal is awareness and regular movement, not rigid perfection.</p>
+
+    <a href="index.html" class="back-link">&larr; Back to all articles</a>
+  </div>
+</div>
+</main>
+
+<section class="founder-section">
+  <div class="wrap">
+    <img src="founder.jpg" alt="Founder photo" onerror="this.style.display='none'">
+    <div class="role">Founder</div>
+    <h3>Wafadar</h3>
+    <p>Writing Daily Vitality to share simple, honest wellness habits that actually fit into everyday life.</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    © 2026 Daily Vitality. Simple wellness, one habit at a time.<br>
+    <a href="contact.html">Contact</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="disclaimer.html">Medical Disclaimer</a>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    const container = document.getElementById('fallingParticles');
+    const colors = ['#4EA8DE', '#2ECC71', '#FFD966', '#FF9E6D'];
+    for (let i = 0; i < 30; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const size = Math.random() * 5 + 3;
+      p.style.width = size + 'px';
+      p.style.height = size + 'px';
+      p.style.left = Math.random() * 100 + 'vw';
+      p.style.background = colors[Math.floor(Math.random() * colors.length)];
+      p.style.animationDuration = (Math.random() * 6 + 6) + 's';
+      p.style.animationDelay = (Math.random() * 8) + 's';
+      container.appendChild(p);
+    }
+  })();
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8L1LKGGNXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8L1LKGGNXW');
+</script>
+</body>
+</html>
