@@ -8,7 +8,8 @@
 <meta property="og:description" content="Practical wellness tips, morning routines, and everyday habits for a calmer life.">
 <meta name="google-site-verification" content="mEezSv5oefnisWMchZvFSkKp8ahn7cLnGKrXEfe7Ukk" />
 <title>Daily Vitality — Simple Wellness for Everyday People</title>
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -26,26 +27,21 @@
 
 <header class="site">
   <div class="wrap brand-row">
-    <a href="index.html" class="brand">
-      <img src="logo.png" alt="Daily Vitality logo" class="logo" onerror="this.style.display='none'">
-      Daily Vitality
-    </a>
-    <nav class="site">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div id="google_translate_element" class="translate-widget"></div>
+    <div class="lang-corner" id="google_translate_element"></div>
+    <a href="index.html" class="brand"><img src="logo.png" alt="Daily Vitality logo" class="logo" onerror="this.style.display='none'">Daily Vitality</a>
     <div class="dots-menu">
-      <button class="dots-btn" onclick="document.getElementById('dotsDropdown').classList.toggle('open')">&#8942;</button>
+      <button class="dots-btn" onclick="document.getElementById('dotsDropdown').classList.toggle('open')">&#9776;</button>
       <div class="dots-dropdown" id="dotsDropdown">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="products.html">Products</a>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="disclaimer.html">Medical Disclaimer</a>
       </div>
     </div>
   </div>
@@ -73,6 +69,11 @@
       <a href="#" class="filter-btn" data-filter="cat-mind">Mind</a>
       <a href="#" class="filter-btn" data-filter="cat-body">Body</a>
       <a href="#" class="filter-btn" data-filter="cat-sleep">Sleep</a>
+      <a href="#" class="filter-btn" data-filter="cat-nutrition">Nutrition</a>
+      <a href="#" class="filter-btn" data-filter="cat-fitness">Fitness</a>
+      <a href="#" class="filter-btn" data-filter="cat-skin">Skin &amp; Senses</a>
+      <a href="#" class="filter-btn" data-filter="cat-immunity">Immunity</a>
+      <a href="#" class="filter-btn" data-filter="cat-chronic">Chronic Health</a>
     </div>
 
     <a href="article.html" class="post-card cat-mind">
@@ -95,7 +96,7 @@
       </div>
     </a>
 
-    <a href="stretches.html" class="post-card cat-body">
+    <a href="stretches.html" class="post-card cat-fitness">
       <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Stretching exercise">
       <div class="post-card-body">
         <div class="date">July 11, 2026</div>
@@ -125,7 +126,7 @@
       </div>
     </a>
 
-    <a href="heart-health.html" class="post-card cat-body">
+    <a href="heart-health.html" class="post-card cat-chronic">
       <img src="https://images.unsplash.com/photo-Tmkwl7EjVtE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Heart health">
       <div class="post-card-body">
         <div class="date">July 11, 2026</div>
@@ -145,7 +146,7 @@
       </div>
     </a>
 
-    <a href="dehydration.html" class="post-card cat-body">
+    <a href="dehydration.html" class="post-card cat-nutrition">
       <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Dehydration and water">
       <div class="post-card-body">
         <div class="date">July 11, 2026</div>
@@ -155,7 +156,7 @@
       </div>
     </a>
 
-    <a href="eye-health.html" class="post-card cat-body">
+    <a href="eye-health.html" class="post-card cat-skin">
       <img src="https://images.unsplash.com/photo-In4XVKhYaiI?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Eye health">
       <div class="post-card-body">
         <div class="date">July 11, 2026</div>
@@ -165,7 +166,7 @@
       </div>
     </a>
 
-    <a href="kidney-health.html" class="post-card cat-body">
+    <a href="kidney-health.html" class="post-card cat-chronic">
       <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Kidney health">
       <div class="post-card-body">
         <div class="date">July 11, 2026</div>
@@ -175,7 +176,7 @@
       </div>
     </a>
 
-    <a href="skin-health.html" class="post-card cat-body">
+    <a href="skin-health.html" class="post-card cat-skin">
       <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Skin health">
       <div class="post-card-body">
         <div class="date">July 11, 2026</div>
@@ -185,7 +186,7 @@
       </div>
     </a>
 
-    <a href="hair-health.html" class="post-card cat-body">
+    <a href="hair-health.html" class="post-card cat-skin">
       <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Hair health">
       <div class="post-card-body">
         <div class="date">July 12, 2026</div>
@@ -195,7 +196,7 @@
       </div>
     </a>
 
-    <a href="teeth-nails-health.html" class="post-card cat-body">
+    <a href="teeth-nails-health.html" class="post-card cat-skin">
       <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Teeth and nails health">
       <div class="post-card-body">
         <div class="date">July 12, 2026</div>
@@ -205,7 +206,7 @@
       </div>
     </a>
 
-    <a href="oral-health.html" class="post-card cat-body">
+    <a href="oral-health.html" class="post-card cat-skin">
       <img src="https://images.unsplash.com/photo-hIgeoQjS_iE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Mouth and oral health">
       <div class="post-card-body">
         <div class="date">July 14, 2026</div>
@@ -215,7 +216,7 @@
       </div>
     </a>
 
-    <a href="blood-circulation.html" class="post-card cat-body">
+    <a href="blood-circulation.html" class="post-card cat-fitness">
       <img src="https://images.unsplash.com/photo-Tmkwl7EjVtE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Blood circulation">
       <div class="post-card-body">
         <div class="date">July 16, 2026</div>
@@ -225,7 +226,7 @@
       </div>
     </a>
 
-    <a href="joint-bone-health.html" class="post-card cat-body">
+    <a href="joint-bone-health.html" class="post-card cat-fitness">
       <img src="https://images.unsplash.com/photo-kKEHYN6gALQ?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Joint and bone health">
       <div class="post-card-body">
         <div class="date">July 16, 2026</div>
@@ -235,7 +236,7 @@
       </div>
     </a>
 
-    <a href="immune-system.html" class="post-card cat-body">
+    <a href="immune-system.html" class="post-card cat-immunity">
       <img src="https://images.unsplash.com/photo-hIgeoQjS_iE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Immune system">
       <div class="post-card-body">
         <div class="date">July 16, 2026</div>
@@ -245,7 +246,7 @@
       </div>
     </a>
 
-    <a href="gut-health.html" class="post-card cat-body">
+    <a href="gut-health.html" class="post-card cat-nutrition">
       <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Gut and digestive health">
       <div class="post-card-body">
         <div class="date">July 16, 2026</div>
@@ -255,7 +256,7 @@
       </div>
     </a>
 
-    <a href="blood-pressure.html" class="post-card cat-body">
+    <a href="blood-pressure.html" class="post-card cat-chronic">
       <img src="https://images.unsplash.com/photo-hIgeoQjS_iE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Blood pressure">
       <div class="post-card-body">
         <div class="date">July 16, 2026</div>
@@ -265,7 +266,7 @@
       </div>
     </a>
 
-    <a href="cholesterol.html" class="post-card cat-body">
+    <a href="cholesterol.html" class="post-card cat-nutrition">
       <img src="https://images.unsplash.com/photo-Tmkwl7EjVtE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Cholesterol">
       <div class="post-card-body">
         <div class="date">July 16, 2026</div>
@@ -275,7 +276,7 @@
       </div>
     </a>
 
-    <a href="blood-sugar.html" class="post-card cat-body">
+    <a href="blood-sugar.html" class="post-card cat-nutrition">
       <img src="https://images.unsplash.com/photo-hIgeoQjS_iE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Blood sugar and diabetes">
       <div class="post-card-body">
         <div class="date">July 17, 2026</div>
@@ -285,7 +286,7 @@
       </div>
     </a>
 
-    <a href="weight-loss-metabolism.html" class="post-card cat-body">
+    <a href="weight-loss-metabolism.html" class="post-card cat-chronic">
       <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Metabolism and weight loss">
       <div class="post-card-body">
         <div class="date">July 17, 2026</div>
@@ -305,7 +306,7 @@
       </div>
     </a>
 
-    <a href="thyroid-health.html" class="post-card cat-body">
+    <a href="thyroid-health.html" class="post-card cat-chronic">
       <img src="https://images.unsplash.com/photo-hIgeoQjS_iE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Thyroid health">
       <div class="post-card-body">
         <div class="date">July 17, 2026</div>
@@ -315,7 +316,7 @@
       </div>
     </a>
 
-    <a href="back-pain.html" class="post-card cat-body">
+    <a href="back-pain.html" class="post-card cat-fitness">
       <img src="https://images.unsplash.com/photo-kKEHYN6gALQ?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Back pain">
       <div class="post-card-body">
         <div class="date">July 17, 2026</div>
@@ -325,7 +326,7 @@
       </div>
     </a>
 
-    <a href="understanding-cancer.html" class="post-card cat-body">
+    <a href="understanding-cancer.html" class="post-card cat-chronic">
       <img src="https://images.unsplash.com/photo-hIgeoQjS_iE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Understanding cancer">
       <div class="post-card-body">
         <div class="date">July 18, 2026</div>
@@ -335,7 +336,7 @@
       </div>
     </a>
 
-    <a href="foodborne-waterborne-illness.html" class="post-card cat-body">
+    <a href="foodborne-waterborne-illness.html" class="post-card cat-immunity">
       <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Foodborne and waterborne illness">
       <div class="post-card-body">
         <div class="date">July 18, 2026</div>
@@ -345,7 +346,7 @@
       </div>
     </a>
 
-    <a href="cold-and-flu.html" class="post-card cat-body">
+    <a href="cold-and-flu.html" class="post-card cat-immunity">
       <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Cold and flu">
       <div class="post-card-body">
         <div class="date">July 18, 2026</div>
@@ -355,7 +356,7 @@
       </div>
     </a>
 
-    <a href="vitamins-minerals.html" class="post-card cat-body">
+    <a href="vitamins-minerals.html" class="post-card cat-nutrition">
       <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Vitamins and minerals">
       <div class="post-card-body">
         <div class="date">July 19, 2026</div>
@@ -365,7 +366,7 @@
       </div>
     </a>
 
-    <a href="ear-health-hearing.html" class="post-card cat-body">
+    <a href="ear-health-hearing.html" class="post-card cat-skin">
       <img src="https://images.unsplash.com/photo-hIgeoQjS_iE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Ear health and hearing">
       <div class="post-card-body">
         <div class="date">July 19, 2026</div>
@@ -375,7 +376,7 @@
       </div>
     </a>
 
-    <a href="understanding-allergies.html" class="post-card cat-body">
+    <a href="understanding-allergies.html" class="post-card cat-immunity">
       <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Understanding allergies">
       <div class="post-card-body">
         <div class="date">July 19, 2026</div>
@@ -385,7 +386,7 @@
       </div>
     </a>
 
-    <a href="posture-and-health.html" class="post-card cat-body">
+    <a href="posture-and-health.html" class="post-card cat-fitness">
       <img src="https://images.unsplash.com/photo-kKEHYN6gALQ?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Posture and health">
       <div class="post-card-body">
         <div class="date">July 19, 2026</div>
@@ -395,13 +396,73 @@
       </div>
     </a>
 
-    <a href="apples-health-guide.html" class="post-card cat-body">
+    <a href="apples-health-guide.html" class="post-card cat-nutrition">
       <img src="https://images.unsplash.com/photo-I58f47LRQYM?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Apples health guide">
       <div class="post-card-body">
         <div class="date">July 19, 2026</div>
-        <span class="category-tag body">Body</span>
+        <span class="category-tag nutrition">Nutrition</span>
         <h3>Apples: A Complete Health Guide</h3>
         <p>The real, evidence-backed benefits of apples and how to get the most from them.</p>
+      </div>
+    </a>
+
+    <a href="migraine-headaches.html" class="post-card cat-chronic">
+      <img src="https://images.unsplash.com/photo-hIgeoQjS_iE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Migraines and headaches">
+      <div class="post-card-body">
+        <div class="date">July 20, 2026</div>
+        <span class="category-tag chronic">Chronic Health</span>
+        <h3>Migraines and Headaches: What's Actually Different</h3>
+        <p>The real difference between tension headaches and migraines, and what helps.</p>
+      </div>
+    </a>
+
+    <a href="womens-health-basics.html" class="post-card cat-chronic">
+      <img src="https://images.unsplash.com/photo-hIgeoQjS_iE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Women's health basics">
+      <div class="post-card-body">
+        <div class="date">July 20, 2026</div>
+        <span class="category-tag chronic">Chronic Health</span>
+        <h3>Women's Health Basics: What Actually Matters at Every Age</h3>
+        <p>Key aspects of women's health across different life stages, explained simply.</p>
+      </div>
+    </a>
+
+    <a href="mens-health-basics.html" class="post-card cat-chronic">
+      <img src="https://images.unsplash.com/photo-hIgeoQjS_iE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Men's health basics">
+      <div class="post-card-body">
+        <div class="date">July 20, 2026</div>
+        <span class="category-tag chronic">Chronic Health</span>
+        <h3>Men's Health Basics: What's Often Overlooked</h3>
+        <p>Key health areas men often overlook, and why routine checkups matter.</p>
+      </div>
+    </a>
+
+    <a href="arthritis-joint-pain.html" class="post-card cat-chronic">
+      <img src="https://images.unsplash.com/photo-kKEHYN6gALQ?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Arthritis and joint pain">
+      <div class="post-card-body">
+        <div class="date">July 23, 2026</div>
+        <span class="category-tag chronic">Chronic Health</span>
+        <h3>Arthritis: Why Joints Become Painful Over Time</h3>
+        <p>The difference between osteoarthritis and rheumatoid arthritis, and what helps.</p>
+      </div>
+    </a>
+
+    <a href="asthma-respiratory-health.html" class="post-card cat-chronic">
+      <img src="https://images.unsplash.com/photo-hIgeoQjS_iE?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Asthma and respiratory health">
+      <div class="post-card-body">
+        <div class="date">July 23, 2026</div>
+        <span class="category-tag chronic">Chronic Health</span>
+        <h3>Asthma and Respiratory Health: What Actually Happens</h3>
+        <p>How asthma affects breathing, common triggers, and what helps.</p>
+      </div>
+    </a>
+
+    <a href="kidney-stones.html" class="post-card cat-chronic">
+      <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1000&q=60&fm=webp&auto=format" class="post-thumb" alt="Kidney stones">
+      <div class="post-card-body">
+        <div class="date">July 23, 2026</div>
+        <span class="category-tag chronic">Chronic Health</span>
+        <h3>Kidney Stones: Why They Form and How to Reduce Risk</h3>
+        <p>What causes kidney stones, warning signs, and how to lower your risk.</p>
       </div>
     </a>
 
@@ -446,7 +507,7 @@
 <script>
   (function() {
     const container = document.getElementById('fallingParticles');
-    const colors = ['#16233D', '#FFFFFF', '#FFD966', '#2ECC71'];
+    const colors = ['#FFFFFF', '#FFD966', '#FF5C5C', '#4EA8DE', '#2ECC71'];
     for (let i = 0; i < 30; i++) {
       const p = document.createElement('div');
       p.className = 'particle';
@@ -454,8 +515,10 @@
       p.style.width = size + 'px';
       p.style.height = size + 'px';
       p.style.left = Math.random() * 100 + 'vw';
-      p.style.background = colors[Math.floor(Math.random() * colors.length)];
-      p.style.animationDuration = (Math.random() * 6 + 6) + 's';
+      const c = colors[Math.floor(Math.random() * colors.length)];
+      p.style.background = c;
+      p.style.color = c;
+      p.style.animationDuration = (Math.random() * 6 + 6) + 's, ' + (Math.random() * 2 + 2) + 's';
       p.style.animationDelay = (Math.random() * 8) + 's';
       container.appendChild(p);
     }

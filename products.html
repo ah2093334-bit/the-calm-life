@@ -5,31 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Recommended products from Daily Vitality — coming soon.">
 <title>Products — Daily Vitality</title>
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="falling-particles" id="fallingParticles"></div>
 
 <header class="site">
   <div class="wrap brand-row">
+    <div class="lang-corner" id="google_translate_element"></div>
     <a href="index.html" class="brand"><img src="logo.png" alt="Daily Vitality logo" class="logo" onerror="this.style.display='none'">Daily Vitality</a>
-    <nav class="site">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </nav>
     <div class="dots-menu">
-      <button class="dots-btn" onclick="document.getElementById('dotsDropdown').classList.toggle('open')">&#8942;</button>
+      <button class="dots-btn" onclick="document.getElementById('dotsDropdown').classList.toggle('open')">&#9776;</button>
       <div class="dots-dropdown" id="dotsDropdown">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="products.html">Products</a>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="disclaimer.html">Medical Disclaimer</a>
       </div>
     </div>
   </div>
@@ -45,10 +46,22 @@
 
 <div class="article-body">
   <div class="wrap">
-    <p>We're carefully choosing wellness products worth recommending — nothing here yet, but this page will feature simple, trusted picks that align with what we write about.</p>
+    <p>Guides and resources created to go deeper than a single article — practical, no-fluff, and easy to actually use.</p>
 
-    <div style="background:var(--bg-card);border:1px dashed var(--line);border-radius:16px;padding:50px 24px;text-align:center;margin:30px 0;">
-      <p style="font-family:var(--mono);color:var(--ink-soft);margin:0;">🛍️ Products coming soon</p>
+    <div style="background:var(--bg-card);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:30px 0;display:grid;grid-template-columns:1fr 1.4fr;gap:0;">
+      <div style="background:#0B1626;display:flex;align-items:center;justify-content:center;padding:24px;">
+        <div style="text-align:center;color:#fff;">
+          <div style="font-family:var(--mono);font-size:0.7rem;color:#FFD966;letter-spacing:0.08em;">EBOOK</div>
+          <div style="font-family:var(--display);font-weight:600;font-style:italic;font-size:1.3rem;margin-top:8px;">10 Simple Habits</div>
+          <div style="font-family:var(--display);font-weight:600;font-style:italic;font-size:1.3rem;">for a Healthier Life</div>
+        </div>
+      </div>
+      <div style="padding:26px 28px;">
+        <h3 style="font-family:var(--display);font-size:1.3rem;margin:0 0 10px;">10 Simple Habits for a Healthier Life</h3>
+        <p style="margin:0 0 16px;color:var(--ink-soft);">A practical, beautifully designed guide to small daily habits that genuinely improve energy, sleep, and wellbeing — no fads, no extremes.</p>
+        <div style="font-family:var(--display);font-weight:700;font-size:1.4rem;color:var(--accent-deep);margin-bottom:16px;">$9.99</div>
+        <a href="https://6517409126048.gumroad.com/l/simple-habits-healthier-life" target="_blank" style="display:inline-block;background:var(--ink);color:#fff;padding:12px 26px;border-radius:999px;text-decoration:none;font-family:var(--mono);font-size:0.85rem;">Buy Now →</a>
+      </div>
     </div>
 
     <a href="index.html" class="back-link">&larr; Back to home</a>
@@ -68,7 +81,7 @@
 <footer class="site">
   <div class="wrap">
     © 2026 Daily Vitality. Simple wellness, one habit at a time.<br>
-    <a href="contact.html">Contact</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="disclaimer.html">Medical Disclaimer</a>
+    <a href="contact.html">Contact</a> · <a href="feedback.html">Feedback</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="disclaimer.html">Medical Disclaimer</a>
   </div>
 </footer>
 
@@ -80,5 +93,31 @@
   gtag('js', new Date());
   gtag('config', 'G-8L1LKGGNXW');
 </script>
+<script>
+  (function() {
+    const container = document.getElementById('fallingParticles');
+    const colors = ['#FFFFFF', '#FFD966', '#FF5C5C', '#4EA8DE', '#2ECC71'];
+    for (let i = 0; i < 30; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const size = Math.random() * 5 + 3;
+      p.style.width = size + 'px';
+      p.style.height = size + 'px';
+      p.style.left = Math.random() * 100 + 'vw';
+      const c = colors[Math.floor(Math.random() * colors.length)];
+      p.style.background = c;
+      p.style.color = c;
+      p.style.animationDuration = (Math.random() * 6 + 6) + 's, ' + (Math.random() * 2 + 2) + 's';
+      p.style.animationDelay = (Math.random() * 8) + 's';
+      container.appendChild(p);
+    }
+  })();
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
